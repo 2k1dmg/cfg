@@ -1,7 +1,7 @@
 ### Windows batch
 
 `start_syncthing.bat`  
-You need to create a shortcut and place it in **Win+R** for current user **shell:startup** for all **shell:common startup**
+For automatic start you need to create a shortcut and place it in **Win+R** for current user **shell:startup** for all **shell:common startup** <a href=https://docs.syncthing.net/users/autostart.html#windows>other methods</a>
 
 ```batch
 @echo off
