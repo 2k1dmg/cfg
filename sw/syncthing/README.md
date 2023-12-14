@@ -1,6 +1,8 @@
 ### Windows batch
 
-start_syncthing.bat
+start_syncthing.bat  
+You need to create a shortcut and place it in **Win+R** for current user **shell:startup** for all **shell:common startup**
+
 ```batch
 @echo off
 
@@ -18,6 +20,7 @@ IF ERRORLEVEL 1 (
 	goto :EOF
 )
 ```
+
 *-no-default-folder
 ```
 		Set default folder.
