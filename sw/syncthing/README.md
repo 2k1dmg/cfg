@@ -18,6 +18,21 @@ IF ERRORLEVEL 1 (
 	goto :EOF
 )
 ```
+*-no-default-folder
+```
+		Set default folder.
+
+http://localhost:8384
+
+Actions - Settings - General - Edit Folder Defaults - Folder Path
+	
+	*path for example
+
+D:\Sync\Syncthing
+
+	Save
+```
+
 stop_syncthing.bat
 ```batch
 @echo off
@@ -26,6 +41,8 @@ taskkill /IM syncthing.exe /T /F
 
 pause
 ```
+
+You need to stop Syncthing before starting to copy or move the config and start it again.
 
 copy_config.bat
 ```batch
