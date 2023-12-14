@@ -105,7 +105,6 @@ other
 !/*.*
 *
 
-
 	DCIM
 .*
 // (?i)*.{tmp,temp}
@@ -117,7 +116,6 @@ other
 .*
 (?i)!/*.{3gp,mp4,mkv,webm,ts,bmp,gif,jpg,png,webp,heic,heif,avif}
 *
-
 
 	DCIM
 .*
