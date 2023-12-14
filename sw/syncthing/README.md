@@ -1,6 +1,6 @@
 ### Windows batch
 
-start_syncthing.bat  
+`start_syncthing.bat`  
 You need to create a shortcut and place it in **Win+R** for current user **shell:startup** for all **shell:common startup**
 
 ```batch
@@ -21,7 +21,7 @@ IF ERRORLEVEL 1 (
 )
 ```
 
-*-no-default-folder
+`*-no-default-folder`
 ```
 		Set default folder.
 
@@ -36,7 +36,7 @@ D:\Sync\Syncthing
 	Save
 ```
 
-stop_syncthing.bat
+`stop_syncthing.bat`
 ```batch
 @echo off
 
@@ -47,7 +47,7 @@ pause
 
 You need to stop Syncthing before starting to copy or move the config and start it again.
 
-copy_config.bat
+`copy_config.bat`
 ```batch
 @echo off
 
@@ -59,7 +59,7 @@ xcopy "%localAppData%\Syncting" "%~dp0config"
 pause
 ```
 
-move_config.bat
+`move_config.bat`
 ```batch
 @echo off
 
