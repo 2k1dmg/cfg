@@ -1,3 +1,11 @@
+### Installation paths
+
+For example
+
+exe and config: `D:\Programs\Syncthing`
+
+default folder: `D:\Sync\Syncthing`
+
 ### Windows batch
 
 `start_syncthing.bat`  
