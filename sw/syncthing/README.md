@@ -24,7 +24,7 @@ if not exist "%~dp0config\" mkdir "%~dp0config"
 
 start /d "%~dp0" syncthing.exe -no-console -no-browser -no-default-folder -home="%~dp0config"
 IF ERRORLEVEL 1 (
-	pause	
+	pause
 	goto :EOF
 )
 ```
