@@ -60,8 +60,8 @@ You need to stop Syncthing before starting to copy or move the config and start 
 @echo off
 
 if not exist "%~dp0config\" (
-mkdir "%~dp0config"
-xcopy "%localAppData%\Syncting" "%~dp0config"
+	mkdir "%~dp0config"
+	xcopy "%localAppData%\Syncting" "%~dp0config"
 )
 
 pause
@@ -72,13 +72,13 @@ pause
 @echo off
 
 if not exist "%~dp0config\" (
-mkdir "%~dp0config"
-xcopy "%localAppData%\Syncting" "%~dp0config"
-IF ERRORLEVEL 1 (
-	pause	
-	goto :EOF
-)
-del /S "%localAppData%\Syncting\*"
+	mkdir "%~dp0config"
+	xcopy "%localAppData%\Syncting" "%~dp0config"
+	IF ERRORLEVEL 1 (
+		pause	
+		goto :EOF
+	)
+	del /S "%localAppData%\Syncting\*"
 )
 
 pause
