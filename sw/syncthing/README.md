@@ -86,6 +86,8 @@ pause
 
 ### .stignore Patterns
 
+Patterns for a folder on the phone (for example `DCIM/Camera`) that needs to be created on the PC.
+
 ```
 	DCIM/Camera
 .*
