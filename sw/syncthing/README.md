@@ -75,7 +75,7 @@ if not exist "%~dp0config\" (
 	mkdir "%~dp0config"
 	xcopy "%localAppData%\Syncting" "%~dp0config"
 	IF ERRORLEVEL 1 (
-		pause	
+		pause
 		goto :EOF
 	)
 	del /S "%localAppData%\Syncting\*"
