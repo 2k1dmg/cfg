@@ -39,7 +39,7 @@ Actions - Settings - General - Edit Folder Defaults - Folder Path
 	
 	*path for example
 
-D:\Sync\Syncthing
+D:\Sync
 
 	Save
 ```
@@ -135,4 +135,22 @@ other
 (?i)!/Camera/*.{3gp,mp4,mkv,webm,ts,bmp,gif,jpg,png,webp,heic,heif,avif}
 (?i)!/Screenshots/*.{bmp,gif,jpg,png,webp,heic,heif,avif}
 *
+```
+
+### Folders
+Defaut folder: `D:\Sync`
+
+Folders Android photos backups:  
+Main: `D:\Sync\YourName\Photos`  
+Delete: `D:\Sync\YourName\PhotosDeleted` "Trash Can File Versioning" (not verified with "Ignore Delete")  
+Archived: `D:\Sync\YourName\PhotosArchived` To move files manually or using a script.  
+
+`move_synced.bat`
+optional (shortcut like start_syncthing.bat)
+```batch
+@echo off
+
+robocopy "D:\Sync\YourName\Screenshots" "D:\Sync\YourName\ScreenshotsArchived" /is /minage:180 /xa:sh /lev:1 /mov
+
+robocopy "D:\Sync\YourName\Photos" "D:\Sync\YourName\PhotosArchived" /is /minage:180 /xa:sh /lev:1 /mov
 ```
