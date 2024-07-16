@@ -140,9 +140,9 @@ other
 ### Folders
 Defaut folder: `D:\Sync`
 
-Folders Android photos backups:  
+Folders for Android photos (or screenshots) backups:  
 Main: `D:\Sync\YourName\Photos`  
-Delete: `D:\Sync\YourName\PhotosDeleted` "Trash Can File Versioning" (not verified with "Ignore Delete")  
+Deleted: `D:\Sync\YourName\PhotosDeleted` "Trash Can File Versioning" (not verified with "Ignore Delete")  
 Archived: `D:\Sync\YourName\PhotosArchived` To move files manually or using a script.  
 
 `move_synced.bat`
