@@ -4,7 +4,7 @@ For example
 
 exe and config: `D:\Programs\Syncthing`
 
-default folder: `D:\Sync\Syncthing`
+default folder: `D:\Sync`
 
 ### Windows batch
 
