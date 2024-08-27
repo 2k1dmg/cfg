@@ -87,6 +87,8 @@ pause
 
 ### .stignore Patterns
 
+[Android Supported media formats](https://developer.android.com/media/platform/supported-formats)
+
 Patterns for a folder on the phone (for example `DCIM/Camera`) that needs to be created on the PC.
 
 ```
