@@ -22,8 +22,9 @@ if not exist "%~dp0syncthing.exe" (
 
 if not exist "%~dp0config\" mkdir "%~dp0config"
 
-rem -no-restart
-start /d "%~dp0" syncthing.exe --no-console --no-browser --no-default-folder --home="%~dp0config"
+rem --no-restart
+rem do not work since version v2.0 --no-default-folder 
+start /d "%~dp0" syncthing.exe --no-console --no-browser --home="%~dp0config"
 IF ERRORLEVEL 1 (
 	pause
 	goto :EOF
